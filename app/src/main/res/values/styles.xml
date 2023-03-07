@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="my_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="my_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="chip_style" parent="my_wrap_content">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/main_color</item>
+    </style>
+
+    <style name="my_text_field">
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:background">@drawable/text_field_shape_1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">#A8A8A8</item>
+    </style>
+
+    <style name="my_text_field_2" parent="my_text_field">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:background">@drawable/text_field_shape_2</item>
+    </style>
+</resources>
