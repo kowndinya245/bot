@@ -9,11 +9,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.view.ViewGroup
 import android.widget.RemoteViews
 import com.kv.bot.ChatActivity
 import com.kv.bot.R
-import com.kv.bot.models.ChatModel
 import com.kv.bot.models.NotificationModel
 import java.text.SimpleDateFormat
 import java.util.*
@@ -45,7 +43,7 @@ class NotificationDecorator(private val context: Context) {
         val dateFormat = SimpleDateFormat("MMM d, yyyy @ hh:mm a", Locale.getDefault())
 
 
-        val remoteViews = RemoteViews(context.packageName, R.layout.my_custom_layout)
+        val remoteViews = RemoteViews(context.packageName, R.layout.custom_notification_layout)
 
         remoteViews.setTextViewText(R.id.textView1, title)
         remoteViews.setTextViewText(R.id.textView2, message)

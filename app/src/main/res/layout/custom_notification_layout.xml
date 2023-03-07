@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <TextView
@@ -19,17 +19,22 @@
             android:layout_height="wrap_content"
             android:text=""
             android:layout_marginBottom="5dp"
-            android:textColor="@color/main_color"
+            android:textColor="@color/purple_700"
             android:layout_weight="1"
+            android:textStyle="italic"
+            android:fontFamily="serif"
             android:textSize="@dimen/notification_font_size" />
             <TextView
                 android:id="@+id/date_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textStyle="italic"
+                android:fontFamily="serif"
                 android:layout_marginBottom="5dp"
-                android:textColor="@color/grey"
-                android:textSize="@dimen/notification_font_size" />
+                android:textColor="@color/green"
+                android:textSize="10sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -39,8 +44,8 @@
 
             <ImageView
                 android:id="@+id/avatar"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginEnd="10dp"
                 android:background="@mipmap/ic_launcher" />
 
@@ -48,11 +53,15 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/chat_bubble"
                 android:text=""
-                android:paddingBottom="2dp"
-                android:textColor="@color/black"
-                android:textSize="15dp"/>
+                android:padding="5dp"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_notification_message"
+                android:textSize="14dp"/>
+
         </LinearLayout>
 
     </LinearLayout>

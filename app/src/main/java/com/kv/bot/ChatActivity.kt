@@ -14,7 +14,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
-import com.kv.bot.databinding.ActivityChatBinding
+import com.kv.bot.databinding.ActivityChatbotBinding
 import com.kv.bot.datastorage.dataStorage.USERNAME
 import com.kv.bot.datastorage.dataStorage.loadData
 import com.kv.bot.models.ChatModel
@@ -23,7 +23,7 @@ import com.kv.bot.service.ChatService
 import com.kv.bot.ui.adapter.ChatMessageAdapter
 
 class ChatActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityChatBinding
+    private lateinit var binding: ActivityChatbotBinding
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter:ChatMessageAdapter
     private lateinit var receiver: BroadcastReceiver
@@ -33,7 +33,7 @@ class ChatActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityChatBinding.inflate(layoutInflater)
+        binding = ActivityChatbotBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         recyclerView = binding.recyclerView
